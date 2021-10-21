@@ -6,10 +6,10 @@ const mySwiper = new Swiper(".swiper-container", {
   direction: "horizontal",
   loop: false,
   speed: 1000,
-  //   autoplay: {
-  //     delay: 4000,
-  //     disableOnInteraction: true,
-  //   },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: true,
+  },
   stopOnLastSlide: false,
   pagination: {
     el: ".swiper-pagination",
