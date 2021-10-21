@@ -1,0 +1,2396 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WildLing</title>
+    <link rel="icon" href="../src/img/wildling_favicon.png" />
+    <!-- FontAwesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- // FontAwesome -->
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- // Swiper -->
+
+    <script defer src="js/bundle.js"></script>
+  </head>
+  <body class="overflow-scroll">
+    <!-- Header -->
+    <header
+      class="
+        py-8
+        h-20
+        fixed
+        top-0
+        left-0
+        w-full
+        bg-red-100
+        z-50
+        flex flex-row
+        items-center
+        justify-between
+      "
+    >
+      <div
+        class="
+          flex flex-row
+          items-center
+          justify-between
+          w-full
+          px-16
+          md:px-20
+          mx-auto
+          lg:max-w-screen-lg
+        "
+      >
+        <!-- Logo -->
+        <a
+          href="#"
+          class="
+            transition
+            transform
+            ease-in
+            duration-200
+            text-yellow-900
+            hover:opacity-70
+            md:text-xl
+            text-lg
+            font-bold
+            cursor-pointer
+          "
+          >WILDLING</a
+        >
+        <!-- // Logo -->
+
+        <!-- Nav-pc -->
+        <nav class="md:block hidden nav-pc">
+          <div>
+            <ul class="flex flex-row items-center justify-center gap-6">
+              <li>
+                <a
+                  href="#sec01"
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease-in
+                    transition
+                    transform
+                    duration-200
+                    cursor-pointer
+                    p-1
+                  "
+                  >Manufacturing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#sec02"
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease-in
+                    transition
+                    transform
+                    duration-200
+                    cursor-pointer
+                    p-1
+                  "
+                  >Packaging</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#sec03"
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease-in
+                    transition
+                    transform
+                    duration-200
+                    cursor-pointer
+                    p-1
+                  "
+                  >Forms</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#sec04"
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease-in
+                    transition
+                    transform
+                    duration-200
+                    cursor-pointer
+                    p-1
+                  "
+                  >Delivery</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- // Nav-pc -->
+
+        <!-- Nav-sp -->
+        <nav
+          class="
+            md:hidden
+            absolute
+            top-0
+            -right-full
+            translate-x-full
+            h-screen
+            z-50
+            w-0
+            bg-white
+            nav-sp
+            p-8
+            opacity-0
+            transition
+            transform
+            duration-500
+            ease-in
+          "
+        >
+          <div class="h-full">
+            <ul
+              class="
+                flex flex-col
+                items-center
+                justify-center
+                gap-20
+                h-full
+                nav-sp-list
+                transition
+                transform
+                duration-500
+                ease-in
+              "
+            >
+              <li class="nav-sp-list--item">
+                <a
+                  href="#sec01"
+                  class="
+                    text-yellow-900
+                    font-semibold
+                    text-xl
+                    hover:opacity-70
+                    ease-in
+                    transition
+                    transform
+                    duration-200
+                    nav-sp-list--link
+                    p-1
+                  "
+                  >Manufacturing</a
+                >
+              </li>
+              <li class="nav-sp-list--item">
+                <a
+                  href="#sec02"
+                  class="
+                    text-yellow-900
+                    font-semibold
+                    text-xl
+                    hover:opacity-70
+                    ease-in
+                    transition
+                    transform
+                    duration-200
+                    nav-sp-list--link
+                    p-1
+                  "
+                  >Packaging</a
+                >
+              </li>
+              <li class="nav-sp-list--item">
+                <a
+                  href="#sec03"
+                  class="
+                    text-yellow-900
+                    font-semibold
+                    text-xl
+                    hover:opacity-70
+                    ease-in
+                    transition
+                    transform
+                    duration-200
+                    nav-sp-list--link
+                    p-1
+                  "
+                  >Farms</a
+                >
+              </li>
+              <li class="nav-sp-list--item">
+                <a
+                  href="#sec04"
+                  class="
+                    text-yellow-900
+                    font-semibold
+                    text-xl
+                    hover:opacity-70
+                    ease-in
+                    transition
+                    transform
+                    duration-200
+                    nav-sp-list--link
+                    p-1
+                  "
+                  >Delivery</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- // Nav-sp -->
+        <!-- Overlay -->
+        <div
+          class="
+            js-overlay
+            w-0
+            h-screen
+            bg-black
+            absolute
+            top-0
+            right-0
+            translate-x-full
+            opacity-60
+            cursor-pointer
+            tranisiton
+            transform
+            ease-in
+            duration-500
+            z-40
+          "
+        ></div>
+        <!-- // Overlay -->
+
+        <!-- RightIcon -->
+        <div class="wrap flex flex-row items-center justify-center gap-6">
+          <a
+            href="#"
+            class="
+              transition
+              transform
+              ease-in
+              duration-200
+              hover:opacity-70
+              md:block
+              hidden
+              cursor-pointer
+            "
+            ><i class="fa fa-user text-yellow-900 text-base"></i
+          ></a>
+          <a
+            href="#"
+            class="
+              transition
+              transform
+              hover:opacity-70
+              ease-in
+              duration-200
+              md:block
+              hidden
+              cursor-pointer
+            "
+            ><i class="fas fa-shopping-cart text-yellow-900 text-base"></i
+          ></a>
+          <button
+            type="button"
+            class="
+              transition
+              transform
+              ease-in
+              duration-200
+              hover:opacity-70
+              js-menuBtn
+              md:hidden
+              relative
+              cursor-pointer
+            "
+          >
+            <i
+              class="
+                fa fa-bars
+                text-yellow-900 text-lg
+                absolute
+                -translate-x-2/4 -translate-y-2/4
+                top-0
+                right-0
+                transform
+              "
+            ></i>
+          </button>
+          <button
+            type="button"
+            class="
+              transition
+              transform
+              ease-in
+              duration-200
+              hover:opacity-70
+              js-closeBtn
+              md:hidden
+              hidden
+              relative
+              z-50
+              cursor-pointer
+            "
+          >
+            <i
+              class="
+                fa fa-times
+                text-yellow-900 text-lg
+                absolute
+                -translate-x-2/4 -translate-y-2/4
+                top-0
+                right-0
+                transform
+              "
+            ></i>
+          </button>
+        </div>
+        <!-- // RightIcon -->
+      </div>
+    </header>
+    <!-- // Header -->
+
+    <!-- Section01 -->
+    <section
+      id="sec01"
+      class="pt-20 -mt-20 overflow-hidden bg-red-100 relative"
+    >
+      <div
+        class="
+          flex flex-col
+          gap-10
+          inner
+          lg:max-w-screen-lg
+          md:gap-24 md:px-20 md:w-full
+          mx-auto
+          pb-20
+          pt-32
+          px-16
+          w-4/5
+        "
+      >
+        <h2
+          class="
+            font-bold
+            md:text-6xl
+            text-5xl text-center text-yellow-900
+            w-4/5
+            mx-auto
+          "
+        >
+          protecting the beauty!
+        </h2>
+        <div
+          class="
+            top-wrap
+            flex
+            md:flex-row
+            items-center
+            md:items-start
+            justify-between
+            gap-20
+            md:gap-10
+            flex-col
+            w-full
+          "
+        >
+          <div
+            class="
+              left-wrap
+              flex flex-col
+              md:items-start
+              items-center
+              md:justify-center
+              gap-8
+              md:w-2/5
+              w-full
+            "
+          >
+            <div class="text-wrap">
+              <div
+                class="
+                  txt-content
+                  flex flex-col
+                  md:gap-4
+                  gap-3
+                  items-start
+                  justify-start
+                "
+              >
+                <p
+                  class="
+                    font-normal
+                    text-yellow-900 text-base
+                    leading-sung
+                    text-center
+                    md:text-left
+                  "
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reprehenderit repellat reiciendis laboriosam inventore dolore
+                  placeat iure recusandae rem harum vitae!
+                </p>
+              </div>
+            </div>
+            <div
+              class="
+                input-content
+                md:flex md:flex-row
+                gap-2
+                items-center
+                mb-6
+                hidden
+                w-full
+              "
+            >
+              <input
+                type="search"
+                class="
+                  transitnin
+                  transform
+                  ease
+                  p-4
+                  bg-white
+                  focus:outline-none
+                  w-full
+                  h-14
+                "
+                placeholder="Search here..."
+              />
+              <button
+                type="button"
+                class="
+                  tranition
+                  transform
+                  ease
+                  hover:opacity-60
+                  p-3
+                  bg-yellow-900
+                  duration-300
+                  cursor-pointer
+                  w-14
+                  h-14
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fa fa-search text-white"></i>
+              </button>
+            </div>
+            <div class="flex items-center justify-center">
+              <a
+                href=""
+                class="
+                  bg-yellow-900
+                  text-white
+                  font-semibold
+                  p-4
+                  tranition
+                  transform
+                  ease
+                  duration-300
+                  hover:opacity-60
+                  shadow-lg
+                  w-48
+                  flex
+                  items-center
+                  justify-center
+                  h-14
+                  cursor-pointer
+                "
+                >VIEW DETAIL</a
+              >
+            </div>
+          </div>
+          <div class="img-wrap md:w-1/2 w-full">
+            <img
+              src="../src/img/wildling_sec01-img.jpg"
+              alt="mainImg"
+              class=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bottom-wrap bg-red-50">
+        <div
+          class="
+            lg:max-w-screen-lg
+            md:px-20
+            mx-auto
+            overflow-hidden
+            px-16
+            py-10
+            w-full
+          "
+        >
+          <div
+            class="
+              mx-auto
+              flex flex-col
+              gap-8
+              items-center
+              justify-between
+              w-4/5
+              md:w-full
+            "
+          >
+            <h3 class="text-lg text-yellow-900 font-bold">
+              SOME OF OUR LENDERS
+            </h3>
+            <div
+              class="
+                flex-wrap
+                text-wrap
+                flex flex-row
+                items-center
+                justify-items-center justify-between
+                w-full
+              "
+            >
+              <p class="text-lg text-yellow-900 font-semibold">CHASE</p>
+              <p class="text-lg text-yellow-900 font-semibold">asana</p>
+              <p class="text-lg text-yellow-900 font-semibold">Google</p>
+              <p class="text-lg text-yellow-900 font-semibold">BuzzFeed</p>
+              <p class="text-lg text-yellow-900 font-semibold">toggl</p>
+              <p class="text-lg text-yellow-900 font-semibold">Walmart</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // Section01 -->
+
+    <!-- Section02 -->
+    <section id="sec02" class="overflow-hidden bg-white w-full relative">
+      <div
+        class="
+          w-full
+          px-16
+          mx-auto
+          mb-4
+          md:px-20
+          lg:max-w-screen-lg
+          pt-32
+          pb-20
+          flex
+          md:flex-row
+          flex-col
+          gap-10
+          md:gap-16
+          items-start
+          justify-between
+        "
+      >
+        <div
+          class="
+            first-wrap
+            md:w-1/2
+            w-4/5
+            mx-auto
+            flex flex-col
+            gap-14
+            items-start
+            justify-start
+          "
+        >
+          <div
+            class="
+              txt-wrap
+              flex flex-col
+              gap-7
+              md:items-start md:justify-start
+              w-full
+              justify-center
+              items-center
+            "
+          >
+            <div
+              class="
+                flex flex-col
+                gap-3
+                md:items-start
+                justify-start
+                items-center
+              "
+            >
+              <h2 class="font-semibold text-5xl text-yellow-900 text-center">
+                about us
+              </h2>
+              <p
+                class="
+                  font-normal
+                  text-yellow-900 text-base
+                  leading-relaxed
+                  text-center
+                  md:text-left
+                "
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste,
+                blanditiis!
+              </p>
+            </div>
+            <div class="flex">
+              <a
+                href=""
+                class="
+                  bg-yellow-900
+                  text-white
+                  font-semibold
+                  border border-yellow-900
+                  p-4
+                  tranition
+                  transform
+                  ease
+                  duration-300
+                  hover:opacity-60
+                  shadow-lg
+                  w-44
+                  flex
+                  items-center
+                  justify-center
+                  h-14
+                  cursor-pointer
+                "
+                >BUY NOW</a
+              >
+            </div>
+          </div>
+          <div class="img-wrap w-full">
+            <img src="../src/img/wildling_sec02-img_01.jpg" alt="" class="" />
+          </div>
+        </div>
+        <div
+          class="
+            second-wrap
+            md:w-1/2
+            w-4/5
+            mx-auto
+            flex flex-col
+            gap-7
+            items-start
+            justify-start
+          "
+        >
+          <div
+            class="
+              txt-wrap
+              flex flex-col
+              gap-7
+              md:items-start md:justify-start
+              items-center
+              order-2
+            "
+          >
+            <div class="flex flex-col gap-4 items-start justify-start">
+              <p
+                class="
+                  font-normal
+                  text-yellow-900 text-base
+                  leading-relaxed
+                  text-center
+                  md:text-left
+                "
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                pariatur repellendus, similique odio cupiditate quisquam. Sed,
+                natus eligendi voluptas tenetur hic suscipit aut porro neque
+                laudantium id fuga quis harum. Iure labore mollitia soluta quo
+                nostrum, vitae hic! Nobis, saepe?
+              </p>
+            </div>
+            <div class="flex">
+              <a
+                href=""
+                class="
+                  bg-white
+                  text-yellow-900
+                  font-semibold
+                  border border-yellow-900
+                  p-4
+                  tranition
+                  transform
+                  ease
+                  duration-300
+                  hover:opacity-60
+                  shadow-lg
+                  w-44
+                  flex
+                  items-center
+                  justify-center
+                  h-14
+                  cursor-pointer
+                "
+                >READ MORE</a
+              >
+            </div>
+          </div>
+          <div class="img-wrap w-full">
+            <img src="../src/img/wildling_sec02-img_02.jpg" alt="" class="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // Section02 -->
+
+    <!-- Section03 -->
+    <section id="sec03" class="overflow-hidden bg-white w-full relative">
+      <div
+        class="
+          w-full
+          px-16
+          mx-auto
+          mb-4
+          md:px-20
+          lg:max-w-screen-lg
+          pt-32
+          pb-20
+          flex flex-row
+          gap-4
+          items-center
+          justify-between
+        "
+      >
+        <div
+          class="
+            first-wrap
+            md:w-full
+            w-4/5
+            mx-auto
+            flex flex-col
+            gap-14
+            items-start
+            justify-start
+          "
+        >
+          <div
+            class="
+              txt-wrap
+              flex flex-col
+              gap-4
+              items-center
+              justify-center
+              w-full
+            "
+          >
+            <div class="flex flex-col gap-4 items-center justify-center">
+              <h2 class="font-semibold text-5xl text-yellow-900 text-center">
+                products
+              </h2>
+              <p
+                class="
+                  font-normal
+                  text-yellow-900 text-base
+                  leading-relaxed
+                  text-center
+                "
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste,
+                blanditiis!
+              </p>
+            </div>
+          </div>
+          <div
+            class="
+              contents-wrap
+              flex
+              md:flex-row
+              flex-col
+              md:gap-16
+              gap-20
+              items-start
+              justify-between
+            "
+          >
+            <div
+              class="
+                content
+                flex flex-col
+                items-start
+                justify-start
+                gap-6
+                md:w-1/2
+              "
+            >
+              <div class="">
+                <img
+                  src="../src/img/wildling_sec03-img_01.jpg"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <div
+                class="
+                  top-txt-wrap
+                  flex flex-col
+                  gap-3
+                  items-start
+                  justify-start
+                "
+              >
+                <h2 class="font-semibold text-yellow-900 text-4xl">
+                  express tonic
+                </h2>
+                <p
+                  class="font-normal text-yellow-900 text-base leading-relaxed"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum fugit sunt saepe porro animi sint possimus voluptates
+                  hic dolorem voluptatum.
+                </p>
+              </div>
+              <div class="bottom-txt-wrap w-full mb-4">
+                <div
+                  class="
+                    wrap
+                    flex flex-row
+                    gap-6
+                    items-start
+                    justify-between
+                    w-full
+                  "
+                >
+                  <div
+                    class="wrap flex flex-col items-start justify-start gap-1"
+                  >
+                    <h2 class="text-green-800 font-bold text-2xl">100%</h2>
+                    <span
+                      class="border border-yellow-900 w-16 h-1 bg-yellow-900"
+                    ></span>
+                    <p
+                      class="font-normal text-yellow-900 text-base leading-snug"
+                    >
+                      Organic Products
+                    </p>
+                  </div>
+                  <div
+                    class="wrap flex flex-col items-start justify-start gap-1"
+                  >
+                    <h2 class="text-green-800 font-bold text-2xl">1M+</h2>
+                    <span
+                      class="border border-yellow-900 w-16 h-1 bg-yellow-900"
+                    ></span>
+                    <p
+                      class="font-normal text-yellow-900 text-base leading-snug"
+                    >
+                      Yearly Sales
+                    </p>
+                  </div>
+                  <div
+                    class="wrap flex flex-col items-start justify-start gap-1"
+                  >
+                    <h2 class="text-green-800 font-bold text-2xl">95%</h2>
+                    <span
+                      class="border border-yellow-900 w-16 h-1 bg-yellow-900"
+                    ></span>
+                    <p
+                      class="font-normal text-yellow-900 text-base leading-snug"
+                    >
+                      Happy Customers
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+                  btn-wrap
+                  flex flex-row
+                  gap-10
+                  items-start
+                  justify-start
+                  w-full
+                "
+              >
+                <a
+                  href=""
+                  class="
+                    bg-yellow-900
+                    text-white
+                    font-semibold
+                    border border-yellow-900
+                    p-4
+                    tranition
+                    transform
+                    ease
+                    duration-300
+                    hover:opacity-60
+                    shadow-lg
+                    w-44
+                    flex
+                    items-center
+                    justify-center
+                    h-14
+                    cursor-pointer
+                  "
+                  >BUY NOW</a
+                >
+                <a
+                  href=""
+                  class="
+                    bg-white
+                    text-yellow-900
+                    font-semibold
+                    border border-yellow-900
+                    p-4
+                    tranition
+                    transform
+                    ease
+                    duration-300
+                    hover:opacity-60
+                    shadow-lg
+                    w-44
+                    flex
+                    items-center
+                    justify-center
+                    h-14
+                    cursor-pointer
+                  "
+                  >READ MORE</a
+                >
+              </div>
+            </div>
+            <div
+              class="
+                content
+                flex flex-col
+                items-start
+                justify-start
+                gap-6
+                md:w-1/2
+              "
+            >
+              <div class="">
+                <img
+                  src="../src/img/wildling_sec03-img_01.jpg"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <div
+                class="
+                  top-txt-wrap
+                  flex flex-col
+                  gap-3
+                  items-start
+                  justify-start
+                "
+              >
+                <h2 class="font-semibold text-yellow-900 text-4xl">
+                  higher self oil
+                </h2>
+                <p
+                  class="font-normal text-yellow-900 text-base leading-relaxed"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum fugit sunt saepe porro animi sint possimus voluptates
+                  hic dolorem voluptatum.
+                </p>
+              </div>
+              <div class="bottom-txt-wrap w-full mb-4">
+                <div
+                  class="
+                    wrap
+                    flex flex-row
+                    gap-6
+                    items-start
+                    justify-between
+                    w-full
+                  "
+                >
+                  <div
+                    class="wrap flex flex-col items-start justify-start gap-1"
+                  >
+                    <h2 class="text-green-800 font-bold text-2xl">100%</h2>
+                    <span
+                      class="border border-yellow-900 w-16 h-1 bg-yellow-900"
+                    ></span>
+                    <p
+                      class="font-normal text-yellow-900 text-base leading-snug"
+                    >
+                      Organic Products
+                    </p>
+                  </div>
+                  <div
+                    class="wrap flex flex-col items-start justify-start gap-1"
+                  >
+                    <h2 class="text-green-800 font-bold text-2xl">1M+</h2>
+                    <span
+                      class="border border-yellow-900 w-16 h-1 bg-yellow-900"
+                    ></span>
+                    <p
+                      class="font-normal text-yellow-900 text-base leading-snug"
+                    >
+                      Yearly Sales
+                    </p>
+                  </div>
+                  <div
+                    class="wrap flex flex-col items-start justify-start gap-1"
+                  >
+                    <h2 class="text-green-800 font-bold text-2xl">95%</h2>
+                    <span
+                      class="border border-yellow-900 w-16 h-1 bg-yellow-900"
+                    ></span>
+                    <p
+                      class="font-normal text-yellow-900 text-base leading-snug"
+                    >
+                      Happy Customers
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+                  btn-wrap
+                  flex flex-row
+                  gap-10
+                  items-start
+                  justify-start
+                  w-full
+                "
+              >
+                <a
+                  href=""
+                  class="
+                    bg-yellow-900
+                    text-white
+                    font-semibold
+                    border border-yellow-900
+                    p-4
+                    tranition
+                    transform
+                    ease
+                    duration-300
+                    hover:opacity-60
+                    shadow-lg
+                    w-44
+                    flex
+                    items-center
+                    justify-center
+                    h-14
+                    cursor-pointer
+                  "
+                  >BUY NOW</a
+                >
+                <a
+                  href=""
+                  class="
+                    bg-white
+                    text-yellow-900
+                    font-semibold
+                    border border-yellow-900
+                    p-4
+                    tranition
+                    transform
+                    ease
+                    duration-300
+                    hover:opacity-60
+                    shadow-lg
+                    w-44
+                    flex
+                    items-center
+                    justify-center
+                    h-14
+                    cursor-pointer
+                  "
+                  >READ MORE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bottom-wrap w-full flex flex-col items-center gap-8 bg-red-50"
+      >
+        <div
+          class="
+            content
+            flex flex-row
+            gap-10
+            items-center
+            justify-between
+            w-full
+            py-10
+            px-16
+            md:px-20
+            mx-auto
+            lg:max-w-screen-lg
+          "
+        >
+          <div
+            class="
+              wrap
+              flex flex-row
+              md:gap-10
+              gap-4
+              items-center
+              justify-between
+              md:w-full
+              w-4/5
+              mx-auto
+            "
+          >
+            <div class="wrap flex flex-col items-center justify-center gap-2">
+              <h2 class="text-yellow-900 font-bold text-3xl text-center">
+                500+
+              </h2>
+              <p
+                class="
+                  font-normal
+                  text-yellow-900 text-base
+                  leading-snug
+                  text-center
+                "
+              >
+                Organic Products
+              </p>
+            </div>
+            <span class="border border-l-2 h-20 border-yellow-900"></span>
+            <div class="wrap flex flex-col items-center justify-center gap-2">
+              <h2 class="text-yellow-900 font-bold text-3xl text-center">
+                100+
+              </h2>
+              <p
+                class="
+                  font-normal
+                  text-yellow-900 text-base
+                  leading-snug
+                  text-center
+                "
+              >
+                International Franchises
+              </p>
+            </div>
+            <span class="border border-l-2 h-20 border-yellow-900"></span>
+            <div class="wrap flex flex-col items-center justify-center gap-2">
+              <h2 class="text-yellow-900 font-bold text-3xl text-center">
+                1 Million+
+              </h2>
+              <p
+                class="
+                  font-normal
+                  text-yellow-900 text-base
+                  leading-snug
+                  text-center
+                "
+              >
+                Sales through out the World
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // Section03 -->
+
+    <!-- Section04 -->
+    <section id="sec04" class="overflow-hidden bg-white w-full relative">
+      <div
+        class="
+          w-full
+          px-16
+          mx-auto
+          mb-4
+          md:px-20
+          lg:max-w-screen-lg
+          pt-32
+          pb-20
+          flex
+          md:flex-row
+          flex-col
+          gap-16
+          items-start
+          justify-between
+        "
+      >
+        <div class="first-wrap md:w-1/2 order-2 w-4/5 mx-auto">
+          <img src="../src/img/wildling_sec04-img.jpg" alt="" class="" />
+        </div>
+        <div
+          class="
+            second-wrap
+            md:w-1/2
+            w-4/5
+            mx-auto
+            flex flex-col
+            gap-14
+            items-start
+            justify-start
+            md:order-1
+          "
+        >
+          <div
+            class="
+              txt-wrap
+              flex flex-col
+              md:gap-16
+              items-start
+              justify-start
+              gap-8
+            "
+          >
+            <div
+              class="
+                flex flex-col
+                gap-8
+                md:items-start
+                justify-start
+                items-center
+              "
+            >
+              <h2
+                class="
+                  text-5xl text-yellow-900 text-center
+                  font-semibold
+                  md:text-left
+                "
+              >
+                we provide you the best taste
+              </h2>
+              <p
+                class="
+                  font-normal
+                  text-yellow-900 text-base
+                  leading-relaxed
+                  text-center
+                  md:text-left
+                "
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                harum! Distinctio, placeat? Aspernatur quo rerum similique
+                cumque explicabo, recusandae alias necessitatibus, quis suscipit
+                consequatur consectetur neque soluta blanditiis eaque? Iste.
+              </p>
+            </div>
+            <div
+              class="flex w-full justify-center md:justify-start items-center"
+            >
+              <a
+                href=""
+                class="
+                  bg-yellow-900
+                  text-white
+                  font-semibold
+                  border border-yellow-900
+                  p-4
+                  tranition
+                  transform
+                  ease
+                  duration-300
+                  hover:opacity-60
+                  shadow-lg
+                  w-44
+                  flex
+                  items-center
+                  justify-center
+                  h-14
+                  cursor-pointer
+                "
+                >BUY NOW</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // Section04 -->
+
+    <!-- Section05 -->
+    <section id="sec05" class="pt-20 -mt-20 overflow-hidden bg-red-50">
+      <div
+        class="
+          inner
+          w-full
+          px-16
+          mx-auto
+          mb-4
+          md:px-20
+          lg:max-w-screen-lg
+          pt-32
+          pb-20
+          relative
+        "
+      >
+        <div
+          class="
+            txt-wrap
+            flex flex-col
+            gap-16
+            items-center
+            justify-center
+            mb-16
+            w-4/5
+            mx-auto
+          "
+        >
+          <div class="flex flex-col gap-8 items-center justify-center">
+            <h2 class="font-semibold text-5xl text-yellow-900 text-center">
+              what our customers are saying
+            </h2>
+            <p
+              class="
+                font-normal
+                text-yellow-900 text-base
+                leading-relaxed
+                text-center
+              "
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+              ut sint officiis labore temporibus, provident dolor repudiandae.
+              Pariatur, sit assumenda!
+            </p>
+          </div>
+        </div>
+        <!-- Swiper -->
+        <div
+          class="
+            md:w-full
+            mx-auto
+            overflow-hidden
+            swiper-container
+            swiper-horizontal
+            swiper-initialized
+            swiper-pointer-events
+            w-4/5
+          "
+        >
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div
+              class="
+                swiper-slide
+                bg-white
+                w-1/4
+                p-10
+                rounded-md
+                flex flex-col
+                gap-6
+                hover:opacity-30
+              "
+            >
+              <div class="wrap flex flex-col gap-4 justify-start">
+                <div
+                  class="
+                    star-wrap
+                    flex flex-row
+                    items-center
+                    justify-start
+                    gap-1
+                  "
+                >
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                </div>
+                <p class="font-normal text-base text-gray-500">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum deserunt, quis iure recusandae nam ratione ipsam
+                  accusamus vel ad cupiditate.
+                </p>
+              </div>
+              <div class="bottom-wrap flex flex-row gap-4 items-center">
+                <div class="img-wrap">
+                  <img
+                    src="../src/img/wildling_profile-img_01.jpg"
+                    alt=""
+                    class="h-14 rounded-full w-14"
+                  />
+                </div>
+                <div class="txt-wrap flex flex-col justify-start">
+                  <h3 class="text-gray-600 font-semibold text-base">
+                    Serhiy Hipskey
+                  </h3>
+                  <p class="font-normal text-gray-400 text-sm">CEO</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                bg-white
+                w-1/4
+                p-10
+                rounded-md
+                flex flex-col
+                gap-6
+                hover:opacity-30
+              "
+            >
+              <div class="wrap flex flex-col gap-4 justify-start">
+                <div
+                  class="
+                    star-wrap
+                    flex flex-row
+                    items-center
+                    justify-start
+                    gap-1
+                  "
+                >
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                </div>
+                <p class="font-normal text-base text-gray-500">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum deserunt, quis iure recusandae nam ratione ipsam
+                  accusamus vel ad cupiditate.
+                </p>
+              </div>
+              <div class="bottom-wrap flex flex-row gap-4 items-center">
+                <div class="img-wrap">
+                  <img
+                    src="../src/img/wildling_profile-img_02.jpg"
+                    alt=""
+                    class="h-14 rounded-full w-14"
+                  />
+                </div>
+                <div class="txt-wrap flex flex-col justify-start">
+                  <h3 class="text-gray-600 font-semibold text-base">
+                    Joie Monica
+                  </h3>
+                  <p class="font-normal text-gray-400 text-sm">COO</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                bg-white
+                w-1/4
+                p-10
+                rounded-md
+                flex flex-col
+                gap-6
+                hover:opacity-30
+              "
+            >
+              <div class="wrap flex flex-col gap-4 justify-start">
+                <div
+                  class="
+                    star-wrap
+                    flex flex-row
+                    items-center
+                    justify-start
+                    gap-1
+                  "
+                >
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                </div>
+                <p class="font-normal text-base text-gray-500">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum deserunt, quis iure recusandae nam ratione ipsam
+                  accusamus vel ad cupiditate.
+                </p>
+              </div>
+              <div class="bottom-wrap flex flex-row gap-4 items-center">
+                <div class="img-wrap">
+                  <img
+                    src="../src/img/wildling_profile-img_03.jpg"
+                    alt=""
+                    class="h-14 rounded-full w-14"
+                  />
+                </div>
+                <div class="txt-wrap flex flex-col justify-start">
+                  <h3 class="text-gray-600 font-semibold text-base">
+                    Britain Eriksen
+                  </h3>
+                  <p class="font-normal text-gray-400 text-sm">CFO</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                bg-white
+                w-1/4
+                p-10
+                rounded-md
+                flex flex-col
+                gap-6
+                hover:opacity-30
+              "
+            >
+              <div class="wrap flex flex-col gap-4 justify-start">
+                <div
+                  class="
+                    star-wrap
+                    flex flex-row
+                    items-center
+                    justify-start
+                    gap-1
+                  "
+                >
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                </div>
+                <p class="font-normal text-base text-gray-500">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum deserunt, quis iure recusandae nam ratione ipsam
+                  accusamus vel ad cupiditate.
+                </p>
+              </div>
+              <div class="bottom-wrap flex flex-row gap-4 items-center">
+                <div class="img-wrap">
+                  <img
+                    src="../src/img/wildling_profile-img_04.jpg"
+                    alt=""
+                    class="h-14 rounded-full w-14"
+                  />
+                </div>
+                <div class="txt-wrap flex flex-col justify-start">
+                  <h3 class="text-gray-600 font-semibold text-base">
+                    Sarah Jessica
+                  </h3>
+                  <p class="font-normal text-gray-400 text-sm">
+                    Vice President
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                bg-white
+                w-1/4
+                p-10
+                rounded-md
+                flex flex-col
+                gap-6
+                hover:opacity-30
+              "
+            >
+              <div class="wrap flex flex-col gap-4 justify-start">
+                <div
+                  class="
+                    star-wrap
+                    flex flex-row
+                    items-center
+                    justify-start
+                    gap-1
+                  "
+                >
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                </div>
+                <p class="font-normal text-base text-gray-500">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum deserunt, quis iure recusandae nam ratione ipsam
+                  accusamus vel ad cupiditate.
+                </p>
+              </div>
+              <div class="bottom-wrap flex flex-row gap-4 items-center">
+                <div class="img-wrap">
+                  <img
+                    src="../src/img/wildling_profile-img_05.jpg"
+                    alt=""
+                    class="h-14 rounded-full w-14"
+                  />
+                </div>
+                <div class="txt-wrap flex flex-col justify-start">
+                  <h3 class="text-gray-600 font-semibold text-base">
+                    Jack Horn
+                  </h3>
+                  <p class="font-normal text-gray-400 text-sm">
+                    General Manager
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                swiper-slide
+                bg-white
+                w-1/4
+                p-10
+                rounded-md
+                flex flex-col
+                gap-6
+                hover:opacity-30
+              "
+            >
+              <div class="wrap flex flex-col gap-4 justify-start">
+                <div
+                  class="
+                    star-wrap
+                    flex flex-row
+                    items-center
+                    justify-start
+                    gap-1
+                  "
+                >
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                  <i class="fas fa-star text-yellow-500 text-sm"></i>
+                </div>
+                <p class="font-normal text-base text-gray-500">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum deserunt, quis iure recusandae nam ratione ipsam
+                  accusamus vel ad cupiditate.
+                </p>
+              </div>
+              <div class="bottom-wrap flex flex-row gap-4 items-center">
+                <div class="img-wrap">
+                  <img
+                    src="../src/img/wildling_profile-img_06.jpg"
+                    alt=""
+                    class="h-14 rounded-full w-14"
+                  />
+                </div>
+                <div class="txt-wrap flex flex-col justify-start">
+                  <h3 class="text-gray-600 font-semibold text-base">
+                    Selena Carrie
+                  </h3>
+                  <p class="font-normal text-gray-400 text-sm">Director</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- // Slides -->
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- // Swiper -->
+      </div>
+    </section>
+    <!-- // Section05 -->
+
+    <!-- Footer -->
+    <footer class="overflow-hidden bg-white w-full relative">
+      <div
+        class="
+          w-full
+          px-16
+          mx-auto
+          pb-10
+          md:px-20
+          lg:max-w-screen-lg
+          pt-32
+          flex flex-col
+          gap-20
+        "
+      >
+        <div
+          class="
+            top-wrap
+            flex
+            md:flex-row md:gap-4
+            items-center
+            justify-between
+            flex-col
+            gap-10
+          "
+        >
+          <div
+            class="
+              left-wrap
+              md:w-3/12
+              w-full
+              flex flex-col
+              gap-12
+              items-start
+              justify-start
+            "
+          >
+            <div class="txt-wrap flex flex-col gap-3 items-start justify-start">
+              <h2 class="font-bold md:text-xl text-lg text-yellow-900">
+                WILDLING
+              </h2>
+              <p class="font-normal text-yellow-900 text-base leading-relaxed">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum,
+                maxime? Incidunt veritatis sit reprehenderit earum.
+              </p>
+            </div>
+            <div
+              class="sns-wrap flex flex-row gap-4 items-center justify-start"
+            >
+              <a
+                href=""
+                class="
+                  hover:opacity-70
+                  ease
+                  transition
+                  transform
+                  duration-200
+                  bg-yellow-900
+                  w-7
+                  h-7
+                  rounded-full
+                  cursor-pointer
+                  flex
+                  items-center
+                  justify-center
+                  p-1
+                "
+                ><i class="fab fa-facebook-f text-white text-sm"></i
+              ></a>
+              <a
+                href=""
+                class="
+                  hover:opacity-70
+                  ease
+                  transition
+                  transform
+                  duration-200
+                  bg-yellow-900
+                  w-7
+                  h-7
+                  rounded-full
+                  cursor-pointer
+                  flex
+                  items-center
+                  justify-center
+                  p-1
+                "
+                ><i class="fab fa-twitter text-white text--sm"></i
+              ></a>
+              <a
+                href=""
+                class="
+                  hover:opacity-70
+                  ease
+                  transition
+                  transform
+                  duration-200
+                  bg-yellow-900
+                  w-7
+                  h-7
+                  rounded-full
+                  cursor-pointer
+                  flex
+                  items-center
+                  justify-center
+                  p-1
+                "
+                ><i class="fab fa-instagram text-white text--sm"></i
+              ></a>
+            </div>
+          </div>
+          <!-- List--pc -->
+          <div
+            class="list-pc md:flex flex-row gap-8 justify-between w-1/2 hidden"
+          >
+            <ul class="flex flex-col items-start justify-start gap-3">
+              <li class="font-semibold text-xl text-yellow-900 mb-1">Menu</li>
+              <li class="">
+                <a
+                  href=""
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease
+                    transition
+                    transform
+                    duration-200
+                  "
+                  >Donations</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href=""
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease
+                    transition
+                    transform
+                    duration-200
+                  "
+                  >Features</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href=""
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease
+                    transition
+                    transform
+                    duration-200
+                  "
+                  >Category</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href=""
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease
+                    transition
+                    transform
+                    duration-200
+                  "
+                  >Volunteer</a
+                >
+              </li>
+            </ul>
+            <ul class="flex flex-col items-start justify-start gap-3">
+              <li class="font-semibold text-xl text-yellow-900 mb-1">
+                Categories
+              </li>
+              <li class="">
+                <a
+                  href=""
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease
+                    transition
+                    transform
+                    duration-200
+                  "
+                  >Healthy Food</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href=""
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease
+                    transition
+                    transform
+                    duration-200
+                  "
+                  >Education</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href=""
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease
+                    transition
+                    transform
+                    duration-200
+                  "
+                  >Clean Water</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href=""
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease
+                    transition
+                    transform
+                    duration-200
+                  "
+                  >Medical Help</a
+                >
+              </li>
+            </ul>
+            <ul class="flex flex-col items-start justify-start gap-3">
+              <li class="font-semibold text-xl text-yellow-900 mb-1">
+                About Us
+              </li>
+              <li class="">
+                <a
+                  href=""
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease
+                    transition
+                    transform
+                    duration-200
+                  "
+                  >Who are you?</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href=""
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease
+                    transition
+                    transform
+                    duration-200
+                  "
+                  >Countact Us</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href=""
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease
+                    transition
+                    transform
+                    duration-200
+                  "
+                  >FAQ</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href=""
+                  class="
+                    text-yellow-900
+                    font-normal
+                    text-sm
+                    hover:opacity-70
+                    ease
+                    transition
+                    transform
+                    duration-200
+                  "
+                  >Help</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- // List--pc -->
+
+          <!-- List--sp -->
+          <div class="list-sp w-full md:hidden flex flex-col overflow-hidden">
+            <div
+              class="
+                bg-white
+                accordionList-wrap
+                flex flex-col
+                border
+                border-r-0
+                border-l-0
+                border-b-0
+                border-yellow-900
+                border-solid
+                transition-all
+                transform
+                duration-300
+                ease-in
+              "
+            >
+              <input
+                type="checkbox"
+                class="accordionCheck hidden"
+                id="accordionCheck--01"
+              />
+              <label
+                for="accordionCheck--01"
+                class="
+                  accordionLabel
+                  cursor-pointer
+                  text-yellow-900
+                  font-semibold
+                  text-lg
+                  transition-all
+                  transform
+                  duration-300
+                  ease-in
+                  relative
+                  px-2
+                  py-3
+                  hover:opacity-70
+                "
+                >Menu</label
+              >
+              <ul
+                class="
+                  accordionList
+                  duration-300
+                  ease-in
+                  flex flex-col
+                  gap-4
+                  px-4
+                  transform
+                  transition-all
+                "
+              >
+                <li class="accordionList--item w-full">
+                  <a
+                    href=""
+                    class="
+                      accordionList--link
+                      cursor-pointer
+                      duration-100
+                      ease
+                      font-normal
+                      hover:opacity-70
+                      text-base text-yellow-900
+                      transform
+                      transition
+                    "
+                    >Donations</a
+                  >
+                </li>
+                <li class="accordionList--item">
+                  <a
+                    href=""
+                    class="
+                      accordionList--link
+                      transition
+                      transform
+                      duration-100
+                      ease
+                      hover:opacity-70
+                      text-yellow-900 text-base
+                      w-full
+                    "
+                    >Features</a
+                  >
+                </li>
+                <li class="accordionList--item">
+                  <a
+                    href=""
+                    class="
+                      accordionList--link
+                      transition
+                      transform
+                      duration-100
+                      ease
+                      hover:opacity-70
+                      text-yellow-900 text-base
+                      w-full
+                    "
+                    >Category</a
+                  >
+                </li>
+                <li class="accordionList--item">
+                  <a
+                    href=""
+                    class="
+                      accordionList--link
+                      transition
+                      transform
+                      duration-100
+                      ease
+                      hover:opacity-70
+                      text-yellow-900 text-base
+                      w-full
+                    "
+                    >Volunteer</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="
+                bg-white
+                accordionList-wrap
+                flex flex-col
+                border
+                border-r-0
+                border-l-0
+                border-b-0
+                border-yellow-900
+                border-solid
+                transition-all
+                transform
+                duration-500
+                ease-in
+              "
+            >
+              <input
+                type="checkbox"
+                class="accordionCheck hidden"
+                id="accordionCheck--02"
+              />
+              <label
+                for="accordionCheck--02"
+                class="
+                  accordionLabel
+                  cursor-pointer
+                  text-yellow-900
+                  font-semibold
+                  text-lg
+                  transition-all
+                  duration-300
+                  ease-in
+                  relative
+                  hover:opacity-70
+                  px-2
+                  py-3
+                "
+                >Categories</label
+              >
+              <ul
+                class="
+                  accordionList
+                  flex flex-col
+                  gap-4
+                  transition-all
+                  transform
+                  duration-200
+                  ease-in
+                  px-4
+                "
+              >
+                <li class="accordionList--item w-full">
+                  <a
+                    href=""
+                    class="
+                      accordionList--link
+                      cursor-pointer
+                      duration-100
+                      ease
+                      font-normal
+                      hover:opacity-70
+                      text-base text-yellow-900
+                      transform
+                      transition
+                    "
+                    >Healthy Food</a
+                  >
+                </li>
+                <li class="accordionList--item">
+                  <a
+                    href=""
+                    class="
+                      accordionList--link
+                      transition
+                      transform
+                      duration-100
+                      ease
+                      hover:opacity-70
+                      text-yellow-900 text-base
+                      w-full
+                    "
+                    >Education</a
+                  >
+                </li>
+                <li class="accordionList--item">
+                  <a
+                    href=""
+                    class="
+                      accordionList--link
+                      transition
+                      transform
+                      duration-100
+                      ease
+                      hover:opacity-70
+                      text-yellow-900 text-base
+                      w-full
+                    "
+                    >Clean Water</a
+                  >
+                </li>
+                <li class="accordionList--item">
+                  <a
+                    href=""
+                    class="
+                      accordionList--link
+                      transition
+                      transform
+                      duration-100
+                      ease
+                      hover:opacity-70
+                      text-yellow-900 text-base
+                      w-full
+                    "
+                    >Medical Help</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="
+                bg-white
+                accordionList-wrap
+                flex flex-col
+                border border-r-0 border-l-0 border-yellow-900 border-solid
+                transition-all
+                transform
+                duration-500
+                ease-in
+              "
+            >
+              <input
+                type="checkbox"
+                class="accordionCheck hidden"
+                id="accordionCheck--03"
+              />
+              <label
+                for="accordionCheck--03"
+                class="
+                  accordionLabel
+                  cursor-pointer
+                  text-yellow-900
+                  font-semibold
+                  text-lg
+                  transition-all
+                  duration-300
+                  ease-in
+                  relative
+                  hover:opacity-70
+                  px-2
+                  py-3
+                "
+                >About Us</label
+              >
+              <ul
+                class="
+                  accordionList
+                  flex flex-col
+                  gap-4
+                  transition-all
+                  duration-200
+                  ease-in
+                  px-4
+                "
+              >
+                <li class="accordionList--item w-full">
+                  <a
+                    href=""
+                    class="
+                      accordionList--link
+                      cursor-pointer
+                      duration-100
+                      ease
+                      font-normal
+                      hover:opacity-70
+                      text-base text-yellow-900
+                      transform
+                      transition
+                    "
+                    >Who are you?</a
+                  >
+                </li>
+                <li class="accordionList--item">
+                  <a
+                    href=""
+                    class="
+                      accordionList--link
+                      transition
+                      transform
+                      duration-100
+                      ease
+                      hover:opacity-70
+                      text-yellow-900 text-base
+                      w-full
+                    "
+                    >Contact Us</a
+                  >
+                </li>
+                <li class="accordionList--item">
+                  <a
+                    href=""
+                    class="
+                      accordionList--link
+                      transition
+                      transform
+                      duration-100
+                      ease
+                      hover:opacity-70
+                      text-yellow-900 text-base
+                      w-full
+                    "
+                    >FAQ</a
+                  >
+                </li>
+                <li class="accordionList--item">
+                  <a
+                    href=""
+                    class="
+                      accordionList--link
+                      transition
+                      transform
+                      duration-100
+                      ease
+                      hover:opacity-70
+                      text-yellow-900 text-base
+                      w-full
+                    "
+                    >Help</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- // List--sp -->
+        </div>
+
+        <div class="bottom-wrap">
+          <p class="text-center w-full">
+            <small class="text-yellow-900 font-normal"
+              >&copy; Copyright Wildling. All right reserved</small
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>
